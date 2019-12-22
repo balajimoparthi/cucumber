@@ -3,7 +3,7 @@
 <suite name="BDD Test Suite">
 <test name="Login Test" preserve-order="true">
 <classes>
-<class name="com.cucumber.framework.cucumber.testRunner.TestRunner"/>
+<class name="com.cucumber.framework.testRunner.TestRunner"/>
 </classes>
 </test>
 </suite>

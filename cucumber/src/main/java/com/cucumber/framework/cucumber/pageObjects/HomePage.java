@@ -1,5 +1,6 @@
 package com.cucumber.framework.cucumber.pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,8 +14,10 @@ public class HomePage {
 	
 	WaitHelper waitHelper;
 	
-	@FindBy(xpath="//span[contains(text(),'Administrator')]")
-	public WebElement adminstrator;
+	@FindBy(xpath="//*[@id='ctl00_AdminHeaderControl_Home']")
+	public WebElement maphome;
+	
+	//public static By maphome = By.id("ctl00_AdminHeaderControl_lnkMapHome");
 	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;

@@ -22,26 +22,13 @@ Feature: Sign in
   I want to login to the application
 
   Background: user navigates to application URL
-    Given i am on the Login page URL "http://localhost:8888/index.php?action=index&module=Home"
+    Given i am on the Login page URL "https://mobileqa.internationalsos.com/Mobile/MapUI/Login.aspx?to=1"
     Then i should see Login page
 
-  @sanity
+  @smoke
   Scenario: Sign in with valid credentials
-    When I enter username as "admin"
-    And I enter password as "password"
+    When I enter username as "ITG.AUT@internationalsos.com"
+    And click on continue button
+    And I enter password as "Tracker@654321"
     And click on Login button
     Then I should see application homepage
-    And I should see administrator text message on home page
-
-  @sanity
-  Scenario Outline: Title of your scenario outline
-    When I enter username as "<userName>"
-    And I enter password as "<passWord>"
-    And click on Login button
-    Then I should see application homepage
-    And I should see administrator text message on home page
-
-    Examples: 
-      | userName | passWord |
-      | admin    | password |
-      | admin    | password |

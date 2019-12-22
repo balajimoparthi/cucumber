@@ -17,14 +17,9 @@ public class HomePageStepDefinitions extends TestBase{
 	@Then("^I should see application homepage$")
 	public void i_should_see_application_homepage() throws Throwable {
 		waitHelper = new WaitHelper(driver);
-		waitHelper.waitForElement(homePage.adminstrator, 60);
-	    homePage.adminstrator.isDisplayed();
+		waitHelper.waitForElement(homePage.maphome, 60);
+	    homePage.maphome.isDisplayed();
 	}
 
-	@Then("^I should see administrator text message on home page$")
-	public void i_should_see_administrator_text_message_on_home_page() throws Throwable {
-		  homePage.adminstrator.isDisplayed();
-	
-	
-}
+
 }

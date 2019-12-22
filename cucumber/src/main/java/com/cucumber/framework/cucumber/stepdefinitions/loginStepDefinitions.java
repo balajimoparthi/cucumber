@@ -39,6 +39,11 @@ public class loginStepDefinitions extends TestBase{
 			loginPage.enterUserName(arg1);
 			  
 	}
+	
+	@When("^click on continue button$")
+	public void click_on_continue_button() throws Throwable {
+	  loginPage.continueButton();
+	}
 
 	@When("^I enter password as \"([^\"]*)\"$")
 	public void i_enter_password_as(String arg1) throws Throwable {
@@ -48,9 +53,12 @@ public class loginStepDefinitions extends TestBase{
 	
 	@When("^click on Login button$")
 	public void click_on_Login_button() throws Throwable {
-		loginPage.loginButton.click();
+		loginPage.clickLoginButton();
 	}
 		 
+	
+	
+	
 	}
 
 	

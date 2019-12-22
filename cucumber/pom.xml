@@ -15,6 +15,12 @@
   </properties>
 
   <dependencies>
+  <dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>3.7.1</version>
+    <scope>test</scope>
+</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -26,6 +32,14 @@
     <artifactId>cucumber-java</artifactId>
     <version>1.2.5</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-jvm -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-jvm</artifactId>
+    <version>1.2.5</version>
+    <type>pom</type>
+</dependency>
+
 <dependency>
     <groupId>info.cukes</groupId>
     <artifactId>cucumber-core</artifactId>
@@ -38,6 +52,7 @@
     <version>2.12.2</version>
     <scope>provided</scope>
 </dependency>
+<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-testng -->
 <dependency>
     <groupId>info.cukes</groupId>
     <artifactId>cucumber-testng</artifactId>
@@ -48,12 +63,12 @@
     <artifactId>selenium-java</artifactId>
     <version>3.14.0</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
 <dependency>
     <groupId>net.masterthought</groupId>
     <artifactId>cucumber-reporting</artifactId>
-    <version>4.1.0</version>
+    <version>5.0.0</version>
 </dependency>
-
 <dependency>
     <groupId>log4j</groupId>
     <artifactId>log4j</artifactId>
@@ -65,7 +80,7 @@
     <version>6.14.3</version>
     <scope>test</scope>
 </dependency>
-  </dependencies>
+</dependencies>  
   <build>
 		<plugins>
 			<plugin>
@@ -87,7 +102,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.19.1</version>
 				<configuration>
-				<testFailureIgnore>true </testFailureIgnore>
+				<testFailureIgnore>true</testFailureIgnore>
 					<suiteXmlFiles>
 						<suiteXmlFile>testNg.xml</suiteXmlFile>
 					</suiteXmlFiles>
@@ -95,8 +110,8 @@
 			</plugin>
 			<plugin>
 				<groupId>net.masterthought</groupId>
-				<artifactId>maven-cucumber-reporting</artifactId>
-				<version>3.8.0</version>
+			<artifactId>maven-cucumber-reporting</artifactId>
+			<version>2.8.0</version>
 				<executions>
 					<execution>
 						<id>execution</id>
@@ -106,10 +121,12 @@
 						</goals>
 						<configuration>
 							<projectName>cucumber</projectName>  <!-- Replace with project name -->
-							<outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
-							<cucumberOutput>target/cucumber-reports/CucumberTestReport.json</cucumberOutput>
-							<buildNumber>1</buildNumber>
+							<outputDirectory>${project.build.directory}/cucumber-jvm-reports</outputDirectory>
+							<cucumberOutput>${project.build.directory}/Cucumber.json</cucumberOutput>
+							<enableFlashCharts>true</enableFlashCharts>
+							<buildNumber>2</buildNumber>
 							<parallelTesting>false</parallelTesting>
+							
 						</configuration>
 					</execution>
 				</executions>

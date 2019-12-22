@@ -11,14 +11,17 @@ public class LoginPage {
 
 	private WebDriver driver;
 	
-	@FindBy(xpath="//*[@id='form']/div/div[2]/input")
+	@FindBy(xpath="//input[@id='ctl00_MainContent_LoginUser_txtUserName']")
 	public WebElement userName;
 	
-	@FindBy(xpath="//*[@id='form']/div/div[4]/input")
+	@FindBy(xpath="//input[@id='ctl00_MainContent_LoginUser_txtPassword']")
 	public WebElement passWord;
 	
-	@FindBy(xpath="//*[@id='submitButton']")
+	@FindBy(xpath="//input[@id='ctl00_MainContent_LoginUser_btnLogIn']")
 	public WebElement loginButton;
+	
+	@FindBy(xpath="//input[@id='ctl00_MainContent_LoginUser_btnContinue']")
+	public WebElement cntbutton;
 	
 	WaitHelper waitHelper;
 	
@@ -42,5 +45,9 @@ public class LoginPage {
 	
 	public void clickLoginButton() {
 		loginButton.click();
+	}
+	
+	public void continueButton() {
+		cntbutton.click();
 	}
 }
