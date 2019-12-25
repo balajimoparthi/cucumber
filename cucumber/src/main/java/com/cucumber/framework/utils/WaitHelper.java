@@ -1,6 +1,7 @@
-package com.cucumber.framework.cucumber.helper;
+package com.cucumber.framework.utils;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -20,5 +21,28 @@ public class WaitHelper {
 		WebDriverWait wait = new WebDriverWait(driver,timeOutInSeconds);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		logger.info("element visible");
+	}
+	
+	public boolean waitForElementPresent(By by, String locator, int secs)
+			throws Throwable {
+		boolean status = false;
+		WebDriverWait wait = new WebDriverWait(driver, secs);
+		try {
+
+			wait.until(ExpectedConditions.visibilityOfElementLocated(by));
+			if (driver.findElement(by) != null) {
+				status = true;
+			}
+			logger.info("Wait for Element Present :" + locator);
+
+		} catch (Exception e) {
+
+			status = false;
+			logger.info(e.getMessage());
+			e.printStackTrace();
+			
+
+		}
+		return status;
 	}
 }

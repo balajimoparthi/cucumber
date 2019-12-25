@@ -1,4 +1,4 @@
-package com.cucumber.framework.cucumber.helper;
+package com.cucumber.framework.utils;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -11,7 +11,8 @@ public class LoggerHelper {
 		if(root) {
 		return Logger.getLogger(cls);
 		}
-		PropertyConfigurator.configure("log4j.properties");
+		PropertyConfigurator.configure("log4j.properties");	
+		
 		root = true;
 		return Logger.getLogger(cls);
 	}

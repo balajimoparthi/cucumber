@@ -5,11 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.cucumber.framework.cucumber.helper.WaitHelper;
+import com.cucumber.framework.utils.PropertyFileReader;
+import com.cucumber.framework.utils.WaitHelper;
+
+import cucumber.api.java.en.Then;
 
 public class LoginPage {
 
 	private WebDriver driver;
+	PropertyFileReader prop = new PropertyFileReader();
 	
 	@FindBy(xpath="//input[@id='ctl00_MainContent_LoginUser_txtUserName']")
 	public WebElement userName;
@@ -33,7 +37,8 @@ public class LoginPage {
 		//waitHelper.waitForElement(userName, 60);
 		
 		
-	}
+	}	
+	
 	
 	public void enterUserName(String userName) {
 		this.userName.sendKeys(userName);

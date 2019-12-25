@@ -1,18 +1,22 @@
 package com.cucumber.framework.testRunner;
 
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
-//@CucumberOptions( plugin = { “com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html”});
 
 @CucumberOptions(features="src/test/resources/features",glue= {"com/cucumber.framework.cucumber.stepdefinitions"},
-plugin={"pretty","html:target/cucumber-jvm-reports","json:target/cucumber.json","rerun:target/cucumber-reports/rerun.txt"})
+plugin={"pretty","html:target/cucumber-jvm-reports","json:target/cucumber.json"},
+monochrome=true,
+strict=true,
+dryRun=false,
+tags= {"@smoke,@regression,@login","~@MapUI","~@ECMS"}
+)
 
 public class TestRunner {
 

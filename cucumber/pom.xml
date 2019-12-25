@@ -122,7 +122,7 @@
 						<configuration>
 							<projectName>cucumber</projectName>  <!-- Replace with project name -->
 							<outputDirectory>${project.build.directory}/cucumber-jvm-reports</outputDirectory>
-							<cucumberOutput>${project.build.directory}/Cucumber.json</cucumberOutput>
+							<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
 							<enableFlashCharts>true</enableFlashCharts>
 							<buildNumber>2</buildNumber>
 							<parallelTesting>false</parallelTesting>

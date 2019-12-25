@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.cucumber.framework.cucumber.helper.WaitHelper;
+import com.cucumber.framework.utils.WaitHelper;
 
 public class HomePage {
 
@@ -17,14 +17,16 @@ public class HomePage {
 	@FindBy(xpath="//*[@id='ctl00_AdminHeaderControl_Home']")
 	public WebElement maphome;
 	
-	//public static By maphome = By.id("ctl00_AdminHeaderControl_lnkMapHome");
+	@FindBy(xpath="//a[contains(@id,'LogOff')]")
+	public WebElement logout;
+	
+	@FindBy(xpath="//*[@id='ctl00_AdminHeaderControl_lblApplicationName']")
+	public WebElement homepageTitle;
 	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		waitHelper = new WaitHelper(driver);
-	
-		
+		waitHelper = new WaitHelper(driver);		
 		
 	}
 }
