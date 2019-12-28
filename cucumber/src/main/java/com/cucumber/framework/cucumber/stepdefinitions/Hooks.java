@@ -34,10 +34,7 @@ public class Hooks {
 	}
 	
 	
-	
-		/*File scrFile = ((TakesScreenshot)TestBase.driver).getScreenshotAs(OutputType.FILE);
-		// Now you can do whatever you need to do with it, for example copy somewhere
-		FileUtils.copyFile(scrFile, new File("./screenshot//screenshot.png"));	*/	
+		
 	@After
 		public void endTest(Scenario scenario) throws IOException {
 			if (scenario.isFailed()) {
@@ -47,7 +44,7 @@ public class Hooks {
 					final byte[] screenshot = ((TakesScreenshot) TestBase.driver).getScreenshotAs(OutputType.BYTES);
 					File scrFile = ((TakesScreenshot)TestBase.driver).getScreenshotAs(OutputType.FILE);
 					FileUtils.copyFile(scrFile, new File("./screenshot//" + scenario.getName() + ".png"));	
-					scenario.embed(screenshot, "image/png"); // ... and embed it in
+					scenario.embed(screenshot, "image/png"); 
 				} catch (WebDriverException e) {
 					e.printStackTrace();
 				}

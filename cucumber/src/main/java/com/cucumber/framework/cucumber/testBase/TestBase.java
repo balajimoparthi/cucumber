@@ -24,6 +24,11 @@ public class TestBase {
 			if(browser.equalsIgnoreCase(Browsers.CHROME.name())) {
 				 WebDriverManager.chromedriver().setup();
 				 driver = new ChromeDriver();
+				//WebDriverManager.chromedriver().version("2.40").setup();		
+				 
+			
+				
+						
 				 
 			}else if(browser.equalsIgnoreCase(Browsers.FIREFOX.name())) {
 				 WebDriverManager.firefoxdriver().setup();

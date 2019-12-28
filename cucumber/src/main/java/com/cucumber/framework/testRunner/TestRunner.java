@@ -1,6 +1,7 @@
 package com.cucumber.framework.testRunner;
 
 
+import org.junit.runner.RunWith;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -15,7 +16,7 @@ plugin={"pretty","html:target/cucumber-jvm-reports","json:target/cucumber.json"}
 monochrome=true,
 strict=true,
 dryRun=false,
-tags= {"@smoke,@regression,@login","~@MapUI","~@ECMS"}
+tags= {"@smoke,@regression,@login,@MapUI,@ECMS"}
 )
 
 public class TestRunner {
