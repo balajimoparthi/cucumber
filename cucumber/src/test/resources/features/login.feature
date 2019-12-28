@@ -35,7 +35,7 @@ Feature: Sign in and verify maphome tab
     When I click on logout button
     Then I should be logged out   
     
-  @smoke @login
+  @regression
   Scenario: Sign in with valid credentials
     When I enter username as "ITG.AUT@internationalsos.com"
     And click on continue button

@@ -20,12 +20,12 @@
 Feature: Travel tracker login
   I want to login to the TT application
   
-   Background: user navigates to application URL
-    Given i am on the Login page URL "https://mobileqa.internationalsos.com/Mobile/MapUI/Login.aspx?to=1"
+  Background: user navigates to application URL
+  Given i am on the Login page URL "https://mobileqa.internationalsos.com/Mobile/MapUI/Login.aspx?to=1"
     Then i should see Login page
-
- @smoke @login
-  Scenario: Sign in with valid credentials
+   
+  @smoke
+  Scenario: Sign in with valid credentials     
     When I enter username as "ITG.AUT@internationalsos.com"
     And click on continue button
     And I enter password as "Tracker@654321"

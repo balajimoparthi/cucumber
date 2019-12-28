@@ -1,47 +1,47 @@
-2019-12-27 20:12:66 INFO  WaitHelper :20 -waiting for element visibility
-2019-12-27 20:12:232 INFO  WaitHelper :23 -element visible
-2019-12-27 20:12:234 INFO  loginStepDefinitions :32 -user is on the login page
-2019-12-27 20:12:302 INFO  loginStepDefinitions :44 -user name is displayed
-2019-12-27 20:12:957 INFO  loginStepDefinitions :55 -entered the user name
-2019-12-27 20:12:151 INFO  loginStepDefinitions :66 -clicked on continue button
-2019-12-27 20:12:358 INFO  loginStepDefinitions :76 -entered the password
-2019-12-27 20:12:165 INFO  loginStepDefinitions :87 -clicked on login button
-2019-12-27 20:12:171 INFO  WaitHelper :20 -waiting for element visibility
-2019-12-27 20:12:269 INFO  WaitHelper :23 -element visible
-2019-12-27 20:12:392 INFO  Hooks :43 -Verification of MapHome tab in home page is Failed
-2019-12-27 20:12:517 INFO  WaitHelper :20 -waiting for element visibility
-2019-12-27 20:12:619 INFO  WaitHelper :23 -element visible
-2019-12-27 20:12:619 INFO  loginStepDefinitions :32 -user is on the login page
-2019-12-27 20:12:698 INFO  loginStepDefinitions :44 -user name is displayed
-2019-12-27 20:12:235 INFO  loginStepDefinitions :55 -entered the user name
-2019-12-27 20:12:354 INFO  loginStepDefinitions :66 -clicked on continue button
-2019-12-27 20:12:596 INFO  loginStepDefinitions :76 -entered the password
-2019-12-27 20:12:803 INFO  loginStepDefinitions :87 -clicked on login button
-2019-12-27 20:12:837 ERROR HomePageStepDefinitions :46 -java.lang.NullPointerException  Logout component execution failed
-2019-12-27 20:12:922 ERROR loginStepDefinitions :101 -org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ctl00_MainContent_LoginUser_txtUserName']"}
+2019-12-28 15:12:204 INFO  WaitHelper :20 -waiting for element visibility
+2019-12-28 15:12:456 INFO  WaitHelper :23 -element visible
+2019-12-28 15:12:457 INFO  loginStepDefinitions :32 -user is on the login page
+2019-12-28 15:12:536 INFO  loginStepDefinitions :44 -user name is displayed
+2019-12-28 15:12:16 INFO  loginStepDefinitions :55 -entered the user name
+2019-12-28 15:12:493 INFO  loginStepDefinitions :66 -clicked on continue button
+2019-12-28 15:12:696 INFO  loginStepDefinitions :76 -entered the password
+2019-12-28 15:12:791 INFO  loginStepDefinitions :87 -clicked on login button
+2019-12-28 15:12:795 INFO  WaitHelper :20 -waiting for element visibility
+2019-12-28 15:12:883 INFO  WaitHelper :23 -element visible
+2019-12-28 15:12:986 INFO  Hooks :43 -Verification of MapHome tab in home page is Failed
+2019-12-28 15:12:851 INFO  WaitHelper :20 -waiting for element visibility
+2019-12-28 15:12:940 INFO  WaitHelper :23 -element visible
+2019-12-28 15:12:940 INFO  loginStepDefinitions :32 -user is on the login page
+2019-12-28 15:12:05 INFO  loginStepDefinitions :44 -user name is displayed
+2019-12-28 15:12:362 INFO  loginStepDefinitions :55 -entered the user name
+2019-12-28 15:12:246 INFO  loginStepDefinitions :66 -clicked on continue button
+2019-12-28 15:12:451 INFO  loginStepDefinitions :76 -entered the password
+2019-12-28 15:12:538 INFO  loginStepDefinitions :87 -clicked on login button
+2019-12-28 15:12:543 ERROR HomePageStepDefinitions :46 -java.lang.NullPointerException  Logout component execution failed
+2019-12-28 15:12:683 ERROR loginStepDefinitions :101 -org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ctl00_MainContent_LoginUser_txtUserName']"}
   (Session info: chrome=79.0.3945.88)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'HW1795', ip: '10.62.66.169', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
+System info: host: 'HW1795', ip: '192.168.0.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\E003936\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5b07de5272ee92ea335f5f0411cd1ea9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\E003936\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60429}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8be6eda3d285c6f7706521f3d28f38db
 *** Element info: {Using=xpath, value=//input[@id='ctl00_MainContent_LoginUser_txtUserName']}  Logout component execution failed
-2019-12-27 20:12:358 INFO  WaitHelper :20 -waiting for element visibility
-2019-12-27 20:12:447 INFO  WaitHelper :23 -element visible
-2019-12-27 20:12:448 INFO  loginStepDefinitions :32 -user is on the login page
-2019-12-27 20:12:525 INFO  loginStepDefinitions :44 -user name is displayed
-2019-12-27 20:12:913 INFO  loginStepDefinitions :55 -entered the user name
-2019-12-27 20:12:364 INFO  loginStepDefinitions :66 -clicked on continue button
-2019-12-27 20:12:694 INFO  loginStepDefinitions :76 -entered the password
-2019-12-27 20:12:727 INFO  loginStepDefinitions :87 -clicked on login button
-2019-12-27 20:12:736 ERROR HomePageStepDefinitions :46 -java.lang.NullPointerException  Logout component execution failed
-2019-12-27 20:12:851 ERROR loginStepDefinitions :101 -org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ctl00_MainContent_LoginUser_txtUserName']"}
+2019-12-28 15:12:179 INFO  WaitHelper :20 -waiting for element visibility
+2019-12-28 15:12:262 INFO  WaitHelper :23 -element visible
+2019-12-28 15:12:263 INFO  loginStepDefinitions :32 -user is on the login page
+2019-12-28 15:12:339 INFO  loginStepDefinitions :44 -user name is displayed
+2019-12-28 15:12:782 INFO  loginStepDefinitions :55 -entered the user name
+2019-12-28 15:12:284 INFO  loginStepDefinitions :66 -clicked on continue button
+2019-12-28 15:12:502 INFO  loginStepDefinitions :76 -entered the password
+2019-12-28 15:12:65 INFO  loginStepDefinitions :87 -clicked on login button
+2019-12-28 15:12:76 ERROR HomePageStepDefinitions :46 -java.lang.NullPointerException  Logout component execution failed
+2019-12-28 15:12:195 ERROR loginStepDefinitions :101 -org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ctl00_MainContent_LoginUser_txtUserName']"}
   (Session info: chrome=79.0.3945.88)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'HW1795', ip: '10.62.66.169', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
+System info: host: 'HW1795', ip: '192.168.0.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\E003936\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: fc1886fd08a3b8601767ab4d0a466511
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\E003936\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60482}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f3d87e286456dd4645c6f10024394330
 *** Element info: {Using=xpath, value=//input[@id='ctl00_MainContent_LoginUser_txtUserName']}  Logout component execution failed

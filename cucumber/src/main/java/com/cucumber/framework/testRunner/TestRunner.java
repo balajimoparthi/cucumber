@@ -1,7 +1,7 @@
 package com.cucumber.framework.testRunner;
 
 
-import org.junit.runner.RunWith;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -11,12 +11,14 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
 
+
+
 @CucumberOptions(features="src/test/resources/features",glue= {"com/cucumber.framework.cucumber.stepdefinitions"},
 plugin={"pretty","html:target/cucumber-jvm-reports","json:target/cucumber.json"},
 monochrome=true,
 strict=true,
 dryRun=false,
-tags= {"@smoke,@regression,@login,@MapUI,@ECMS"}
+tags= {"@smoke,@regression,@MapUI,@ECMS"}
 )
 
 public class TestRunner {
