@@ -16,19 +16,15 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@ECMS
-Feature: Travel tracker login
-  I want to login to the TT application
-  
-  Background: user navigates to application URL
-  Given i am on the Login page URL "https://mobileqa.internationalsos.com/Mobile/MapUI/Login.aspx?to=1"
-    Then i should see Login page
+
+Feature: 
+ 
    
   @smoke
   Scenario: Sign in with valid credentials     
-    When I enter username as "ITG.AUT@internationalsos.com"
+    When I enter username as "
     And click on continue button
-    And I enter password as "Tracker@654321"
+    And I enter password as "
     And click on Login button
     When I click on logout button
     Then I should be logged out   
