@@ -18,7 +18,7 @@ plugin={"pretty","html:target/cucumber-jvm-reports","json:target/cucumber.json"}
 monochrome=true,
 strict=true,
 dryRun=false,
-tags= {"@smoke,@regression,@MapUI,@ECMS"}
+tags= {"@smoke,@regression"}
 )
 
 public class TestRunner {
