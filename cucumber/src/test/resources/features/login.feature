@@ -16,30 +16,28 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@TravelTracker
-Feature: Sign in and verify maphome tab
-  As an Traveller of the company
-  I want to login to the application
+
+Feature: 
 
   Background: user navigates to application URL
-    Given i am on the Login page URL "https://mobileqa.internationalsos.com/Mobile/MapUI/Login.aspx?to=1"
+    Given i am on the Login page URL ""
     Then i should see Login page
 
-  @regression @MapUI
+ 
   Scenario: Verification of MapHome tab in home page
-    When I enter username as "ITG.AUT@internationalsos.com"
+    When I enter username as ""
     And click on continue button
-    And I enter password as "Tracker@654321"
+    And I enter password as ""
     And click on Login button
     Then I should see application homepage
     When I click on logout button
     Then I should be logged out   
     
-  @regression
+
   Scenario: Sign in with valid credentials
-    When I enter username as "ITG.AUT@internationalsos.com"
+    When I enter username as ""
     And click on continue button
-    And I enter password as "Tracker@654321"
+    And I enter password as ""
     And click on Login button
     When I click on logout button
     Then I should be logged out   
