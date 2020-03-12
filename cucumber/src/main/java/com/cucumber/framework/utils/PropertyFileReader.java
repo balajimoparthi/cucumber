@@ -42,7 +42,7 @@ public class PropertyFileReader {
         }
  
         //Get properties from configuration.properties
-        url = prop.getProperty("url_ttqa");
+        url = prop.getProperty("url");
         userName = prop.getProperty("username");
         passWord = prop.getProperty("password");
     }
