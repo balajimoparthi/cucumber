@@ -15,16 +15,16 @@ public class LoginPage {
 	private WebDriver driver;
 	PropertyFileReader prop = new PropertyFileReader();
 	
-	@FindBy(xpath="//input[@id='ctl00_MainContent_LoginUser_txtUserName']")
+	@FindBy(xpath="")
 	public WebElement userName;
 	
-	@FindBy(xpath="//input[@id='ctl00_MainContent_LoginUser_txtPassword']")
+	@FindBy(xpath="//")
 	public WebElement passWord;
 	
-	@FindBy(xpath="//input[@id='ctl00_MainContent_LoginUser_btnLogIn']")
+	@FindBy(xpath="//")
 	public WebElement loginButton;
 	
-	@FindBy(xpath="//input[@id='ctl00_MainContent_LoginUser_btnContinue']")
+	@FindBy(xpath="//")
 	public WebElement cntbutton;
 	
 	WaitHelper waitHelper;
