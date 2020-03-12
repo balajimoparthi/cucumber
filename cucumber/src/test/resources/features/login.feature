@@ -24,7 +24,7 @@ Feature:
     Then i should see Login page
 
  
-  Scenario: Verification of MapHome tab in home page
+  Scenario: Verification 
     When I enter username as ""
     And click on continue button
     And I enter password as ""
