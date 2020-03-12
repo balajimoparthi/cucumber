@@ -14,13 +14,13 @@ public class HomePage {
 	
 	WaitHelper waitHelper;
 	
-	@FindBy(xpath="//*[@id='ctl00_AdminHeaderControl_Home']")
+	@FindBy(xpath="")
 	public WebElement maphome;
 	
-	@FindBy(xpath="//a[contains(@id,'LogOff')]")
+	@FindBy(xpath="")
 	public WebElement logout;
 	
-	@FindBy(xpath="//*[@id='ctl00_AdminHeaderControl_lblApplicationName']")
+	@FindBy(xpath="")
 	public WebElement homepageTitle;
 	
 	public HomePage(WebDriver driver) {
