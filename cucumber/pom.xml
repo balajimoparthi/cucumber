@@ -19,8 +19,8 @@
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
     <version>3.7.1</version>
-    
 </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -94,7 +94,12 @@
     <version>6.14.3</version>
     
 </dependency>
-</dependencies>  
+      <dependency>
+          <groupId>com.cucumber.framework</groupId>
+          <artifactId>cucumber</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+      </dependency>
+  </dependencies>
   <build>
 		<plugins>
 			<plugin>
@@ -134,7 +139,7 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>cucumber</projectName>  <!-- Replace with project name -->
+							<projectName>APLOIS-Funds Management</projectName>  <!-- Replace with project name -->
 							<outputDirectory>${project.build.directory}/cucumber-jvm-reports</outputDirectory>
 							<cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
 							<enableFlashCharts>true</enableFlashCharts>

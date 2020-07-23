@@ -2,10 +2,13 @@ package com.cucumber.framework.utils;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class WaitHelper {
 
@@ -22,27 +25,22 @@ public class WaitHelper {
 		wait.until(ExpectedConditions.visibilityOf(element));
 		logger.info("element visible");
 	}
-	
-	public boolean waitForElementPresent(By by, String locator, int secs)
-			throws Throwable {
-		boolean status = false;
-		WebDriverWait wait = new WebDriverWait(driver, secs);
+
+	public void waitForPageLoaded() {
+		ExpectedCondition<Boolean> expectation = driver -> {
+			assert driver != null;
+			return ((JavascriptExecutor) driver).executeScript("return document.readyState").toString().equals("complete");
+		};
 		try {
-
-			wait.until(ExpectedConditions.visibilityOfElementLocated(by));
-			if (driver.findElement(by) != null) {
-				status = true;
-			}
-			logger.info("Wait for Element Present :" + locator);
-
-		} catch (Exception e) {
-
-			status = false;
-			logger.info(e.getMessage());
-			e.printStackTrace();
-			
-
+			Thread.sleep(5000);
+			WebDriverWait wait = new WebDriverWait(driver, 40);
+			wait.until(expectation);
+		} catch (Throwable error) {
+			Assert.fail("Timeout waiting for Page Load Request to complete.");
 		}
-		return status;
 	}
-}
+
+
+	}
+
+

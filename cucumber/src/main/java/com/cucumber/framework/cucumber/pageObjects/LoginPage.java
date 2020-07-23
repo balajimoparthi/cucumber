@@ -13,20 +13,19 @@ import cucumber.api.java.en.Then;
 public class LoginPage {
 
 	private WebDriver driver;
-	PropertyFileReader prop = new PropertyFileReader();
-	
-	@FindBy(xpath="")
+
+
+	@FindBy(xpath="//input[@id='username']")
 	public WebElement userName;
 	
-	@FindBy(xpath="//")
+	@FindBy(xpath="//input[@id='password']")
 	public WebElement passWord;
 	
-	@FindBy(xpath="//")
+	@FindBy(xpath="//button[@class='btn btn-primary btn-lg login-button']")
 	public WebElement loginButton;
-	
-	@FindBy(xpath="//")
-	public WebElement cntbutton;
-	
+
+
+
 	WaitHelper waitHelper;
 	
 	public LoginPage(WebDriver driver) {
@@ -52,7 +51,5 @@ public class LoginPage {
 		loginButton.click();
 	}
 	
-	public void continueButton() {
-		cntbutton.click();
-	}
+
 }

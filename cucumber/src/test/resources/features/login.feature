@@ -1,45 +1,32 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
-
-Feature: 
+Feature: Login to Apolis application
 
   Background: user navigates to application URL
-    Given i am on the Login page URL ""
-    Then i should see Login page
+  Given i am on the Login page URL "http://172.16.40.64/apolis/#/login"
+  Then i should see Login page
 
- 
-  Scenario: Verification 
-    When I enter username as ""
-    And click on continue button
-    And I enter password as ""
+
+
+  @regression
+  Scenario: Verification of Login
+    When I enter username as "CO_WELFARE_SEC_BADRATHA_JSA"
+    And I enter password as "CO_WELFARE_SEC_BADRATHA_JSA"
     And click on Login button
     Then I should see application homepage
     When I click on logout button
-    Then I should be logged out   
-    
+    Then I should be logged out
 
-  Scenario: Sign in with valid credentials
-    When I enter username as ""
-    And click on continue button
-    And I enter password as ""
-    And click on Login button
-    When I click on logout button
-    Then I should be logged out   
+    Scenario Outline: Verification of Login with multiple logins
+      When I enter username as "<usrName>"
+      And I enter password as "<passWord>"
+      And click on Login button
+      Then I should see application homepage
+      When I click on logout button
+      Then I should be logged out
+      Examples:
+      |usrName|passWord|
+      |CO_WELFARE_SEC_BADRATHA_JSA|CO_WELFARE_SEC_BADRATHA_JSA|
+      |CO_WELFARE_SEC_BADRATHA_SS|CO_WELFARE_SEC_BADRATHA_SS|
+
+
     
       

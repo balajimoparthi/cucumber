@@ -25,12 +25,13 @@ public class Hooks {
 	
 	@SuppressWarnings("static-access")
 	@Before
-	public void initializeTest() {
+	public void initializeTest() throws IOException {
 		testBase = new TestBase();
 		testBase.selectBrowser(Browsers.CHROME.name());
 		testBase.driver.manage().window().maximize();
 		testBase.driver.manage().deleteAllCookies();
 		testBase.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		//testBase.launchApp();
 	}
 	
 	

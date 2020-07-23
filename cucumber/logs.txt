@@ -1,47 +1,105 @@
-2019-12-28 15:12:204 INFO  WaitHelper :20 -waiting for element visibility
-2019-12-28 15:12:456 INFO  WaitHelper :23 -element visible
-2019-12-28 15:12:457 INFO  loginStepDefinitions :32 -user is on the login page
-2019-12-28 15:12:536 INFO  loginStepDefinitions :44 -user name is displayed
-2019-12-28 15:12:16 INFO  loginStepDefinitions :55 -entered the user name
-2019-12-28 15:12:493 INFO  loginStepDefinitions :66 -clicked on continue button
-2019-12-28 15:12:696 INFO  loginStepDefinitions :76 -entered the password
-2019-12-28 15:12:791 INFO  loginStepDefinitions :87 -clicked on login button
-2019-12-28 15:12:795 INFO  WaitHelper :20 -waiting for element visibility
-2019-12-28 15:12:883 INFO  WaitHelper :23 -element visible
-2019-12-28 15:12:986 INFO  Hooks :43 -Verification of MapHome tab in home page is Failed
-2019-12-28 15:12:851 INFO  WaitHelper :20 -waiting for element visibility
-2019-12-28 15:12:940 INFO  WaitHelper :23 -element visible
-2019-12-28 15:12:940 INFO  loginStepDefinitions :32 -user is on the login page
-2019-12-28 15:12:05 INFO  loginStepDefinitions :44 -user name is displayed
-2019-12-28 15:12:362 INFO  loginStepDefinitions :55 -entered the user name
-2019-12-28 15:12:246 INFO  loginStepDefinitions :66 -clicked on continue button
-2019-12-28 15:12:451 INFO  loginStepDefinitions :76 -entered the password
-2019-12-28 15:12:538 INFO  loginStepDefinitions :87 -clicked on login button
-2019-12-28 15:12:543 ERROR HomePageStepDefinitions :46 -java.lang.NullPointerException  Logout component execution failed
-2019-12-28 15:12:683 ERROR loginStepDefinitions :101 -org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ctl00_MainContent_LoginUser_txtUserName']"}
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'HW1795', ip: '192.168.0.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\E003936\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60429}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8be6eda3d285c6f7706521f3d28f38db
-*** Element info: {Using=xpath, value=//input[@id='ctl00_MainContent_LoginUser_txtUserName']}  Logout component execution failed
-2019-12-28 15:12:179 INFO  WaitHelper :20 -waiting for element visibility
-2019-12-28 15:12:262 INFO  WaitHelper :23 -element visible
-2019-12-28 15:12:263 INFO  loginStepDefinitions :32 -user is on the login page
-2019-12-28 15:12:339 INFO  loginStepDefinitions :44 -user name is displayed
-2019-12-28 15:12:782 INFO  loginStepDefinitions :55 -entered the user name
-2019-12-28 15:12:284 INFO  loginStepDefinitions :66 -clicked on continue button
-2019-12-28 15:12:502 INFO  loginStepDefinitions :76 -entered the password
-2019-12-28 15:12:65 INFO  loginStepDefinitions :87 -clicked on login button
-2019-12-28 15:12:76 ERROR HomePageStepDefinitions :46 -java.lang.NullPointerException  Logout component execution failed
-2019-12-28 15:12:195 ERROR loginStepDefinitions :101 -org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='ctl00_MainContent_LoginUser_txtUserName']"}
-  (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'HW1795', ip: '192.168.0.6', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_162'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\E003936\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60482}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f3d87e286456dd4645c6f10024394330
-*** Element info: {Using=xpath, value=//input[@id='ctl00_MainContent_LoginUser_txtUserName']}  Logout component execution failed
+2020-07-23 00:07:353 INFO  loginStepDefinitions :44 -user name field is displayed
+2020-07-23 00:07:892 INFO  loginStepDefinitions :55 -entered the user name
+2020-07-23 00:07:93 INFO  loginStepDefinitions :67 -entered the password
+2020-07-23 00:07:264 INFO  loginStepDefinitions :78 -clicked on login button
+2020-07-23 00:07:267 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:987 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:30 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:86 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:762 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:62 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:114 INFO  HomePageStepDefinitions :30 -funds management home page is displayed
+2020-07-23 00:07:121 INFO  loginStepDefinitions :44 -user name field is displayed
+2020-07-23 00:07:377 INFO  loginStepDefinitions :55 -entered the user name
+2020-07-23 00:07:611 INFO  loginStepDefinitions :67 -entered the password
+2020-07-23 00:07:694 INFO  loginStepDefinitions :78 -clicked on login button
+2020-07-23 00:07:696 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:324 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:364 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:433 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:200 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:258 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:294 INFO  HomePageStepDefinitions :30 -funds management home page is displayed
+2020-07-23 00:07:296 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:345 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:339 INFO  HomePageStepDefinitions :43 -user is able to click on create new fund button
+2020-07-23 00:07:412 INFO  HomePageStepDefinitions :53 -create new fund page is displayed
+2020-07-23 00:07:648 INFO  HomePageStepDefinitions :59 -RC number is entered successfully
+2020-07-23 00:07:790 INFO  HomePageStepDefinitions :80 -GO number is entered successfully
+2020-07-23 00:07:02 INFO  HomePageStepDefinitions :118 -Fund932674231 Fund Name is entered successfully
+2020-07-23 00:07:246 INFO  HomePageStepDefinitions :103 -Account number is entered successfully
+2020-07-23 00:07:463 INFO  HomePageStepDefinitions :136 -IFSC code is entered successfully
+2020-07-23 00:07:609 INFO  HomePageStepDefinitions :146 -Bank name is entered successfully
+2020-07-23 00:07:772 INFO  HomePageStepDefinitions :162 -Other details are entered successfully
+2020-07-23 00:07:774 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:814 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:929 INFO  HomePageStepDefinitions :176 -Head Name is entered successfully
+2020-07-23 00:07:930 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:971 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:999 INFO  HomePageStepDefinitions :186 -Clicked on the Sub Head Button
+2020-07-23 00:07:159 INFO  HomePageStepDefinitions :270 -principal subhead name is entered
+2020-07-23 00:07:160 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:198 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:232 INFO  HomePageStepDefinitions :186 -Clicked on the Sub Head Button
+2020-07-23 00:07:380 INFO  HomePageStepDefinitions :270 -interest subhead name is entered
+2020-07-23 00:07:381 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:424 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:553 INFO  HomePageStepDefinitions :207 -Clicked on the Create Fund Button
+2020-07-23 00:07:781 INFO  HomePageStepDefinitions :217 -create fund pop is displayed
+2020-07-23 00:07:782 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:828 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:914 INFO  HomePageStepDefinitions :227 -clicked on OK button
+2020-07-23 00:07:847 INFO  HomePageStepDefinitions :240 -fund created successfully
+2020-07-23 00:07:15 INFO  loginStepDefinitions :44 -user name field is displayed
+2020-07-23 00:07:262 INFO  loginStepDefinitions :55 -entered the user name
+2020-07-23 00:07:502 INFO  loginStepDefinitions :67 -entered the password
+2020-07-23 00:07:589 INFO  loginStepDefinitions :78 -clicked on login button
+2020-07-23 00:07:591 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:356 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:419 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:503 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:737 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:780 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:813 INFO  HomePageStepDefinitions :30 -funds management home page is displayed
+2020-07-23 00:07:814 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:424 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:721 INFO  HomePageStepDefinitions :63 -clicked on create transaction link
+2020-07-23 00:07:649 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:688 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:85 INFO  HomePageStepDefinitions :55 -fund name is selected
+2020-07-23 00:07:146 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:196 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:428 INFO  HomePageStepDefinitions :68 -header name is selected
+2020-07-23 00:07:465 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:513 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:771 INFO  HomePageStepDefinitions :80 -Sub header name is selected
+2020-07-23 00:07:905 INFO  HomePageStepDefinitions :59 -RC number is entered successfully
+2020-07-23 00:07:937 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:974 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:229 INFO  HomePageStepDefinitions :90 -Transaction type is selected
+2020-07-23 00:07:257 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:296 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:434 INFO  HomePageStepDefinitions :100 -Transaction amount is entered
+2020-07-23 00:07:471 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:505 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:614 INFO  HomePageStepDefinitions :110 -Cheque number is entered
+2020-07-23 00:07:643 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:681 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:937 INFO  HomePageStepDefinitions :120 -date is entered
+2020-07-23 00:07:122 INFO  HomePageStepDefinitions :146 -Bank name is entered successfully
+2020-07-23 00:07:290 INFO  HomePageStepDefinitions :162 -Other details are entered successfully
+2020-07-23 00:07:322 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:358 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:462 INFO  HomePageStepDefinitions :140 -clicked on create transaction button
+2020-07-23 00:07:587 INFO  HomePageStepDefinitions :150 -clicked YES on the Are you sure window
+2020-07-23 00:07:444 INFO  HomePageStepDefinitions :160 -clicked NO on the Are you sure window
+2020-07-23 00:07:448 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:278 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:311 INFO  HomePageStepDefinitions :30 -funds management home page is displayed
+2020-07-23 00:07:313 INFO  WaitHelper :23 -waiting for element visibility
+2020-07-23 00:07:349 INFO  WaitHelper :26 -element visible
+2020-07-23 00:07:522 INFO  HomePageStepDefinitions :170 -clicked on pending transactions link
+2020-07-23 00:07:631 INFO  HomePageStepDefinitions :31 -pending transactions for clearance page is displayed
+2020-07-23 00:07:31 INFO  HomePageStepDefinitions :41 -clicked on view details button
+2020-07-23 00:07:752 INFO  HomePageStepDefinitions :67 -clicked on Okay button
+2020-07-23 00:07:753 INFO  WaitHelper :23 -waiting for element visibility

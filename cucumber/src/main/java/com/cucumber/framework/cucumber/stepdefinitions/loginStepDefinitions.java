@@ -36,12 +36,12 @@ public class loginStepDefinitions extends TestBase{
 	    
 	}
 
-	@Then("^i should see Login page$")
+	@Then("^I should see Login page$")
 	public void i_should_see_Login_page() throws Throwable {
 		//loginPage = new LoginPage(driver);
 		try {
 			loginPage.userName.isDisplayed();
-			log.info("user name is displayed");
+			log.info("user name field is displayed");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -58,16 +58,7 @@ public class loginStepDefinitions extends TestBase{
 			}
 			  
 	}
-	
-	@When("^click on continue button$")
-	public void click_on_continue_button() throws Throwable {
-	  try {
-		loginPage.continueButton();
-		  log.info("clicked on continue button");
-	} catch (Exception e) {
-		e.printStackTrace();
-	}
-	}
+
 
 	@When("^I enter password as \"([^\"]*)\"$")
 	public void i_enter_password_as(String password) throws Throwable {
@@ -80,7 +71,7 @@ public class loginStepDefinitions extends TestBase{
 	}
 
 	
-	@When("^click on Login button$")
+	@When("^I click on Login button$")
 	public void click_on_Login_button() throws Throwable {
 		try {
 			loginPage.clickLoginButton();
@@ -102,5 +93,13 @@ public class loginStepDefinitions extends TestBase{
 		}		
 	    
 	}
-		 	
+
+	@Given("^I am on the Login page URL$")
+	public void iAmOnTheLoginPageURL() {
+		try {
+			launchApp();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
+}

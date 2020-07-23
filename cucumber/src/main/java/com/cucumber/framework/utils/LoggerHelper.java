@@ -21,6 +21,7 @@ public class LoggerHelper {
 		Logger log = LoggerHelper.getLogger(LoggerHelper.class);
 		log.info("TEST INFO");
 		log.info("TEST INFO");
+
 		
 	}
 }

@@ -14,14 +14,17 @@ public class HomePage {
 	
 	WaitHelper waitHelper;
 	
-	@FindBy(xpath="")
-	public WebElement maphome;
+	@FindBy(xpath="//span[@class='pi pi-home']")
+	public WebElement apolisHome;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//div[@id='navbarDropdown-1']//img[@class='img-fluid']")
+	public WebElement logoutDropDown;
+	
+	@FindBy(xpath="//span[contains(text(),'logout')]")
 	public WebElement logout;
-	
-	@FindBy(xpath="")
-	public WebElement homepageTitle;
+
+	@FindBy(xpath="//a[contains(text(),'Bhadratha Section')]")
+	public WebElement bhadrathaSection;
 	
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
